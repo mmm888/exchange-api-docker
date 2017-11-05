@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    cmd:
+        depends_on:
+            - influxdb
+        build: "./build/cmd"
+        environment:
+            - "PAIRCODE=USD_JPY EUR_JPY"
+    influxdb:
+        image: influxdb:1.3
+        volumes:
+            - ./volumes/influxdb:/var/lib/influxdb
+    grafana:
+        image: grafana/grafana:4.6.1
+        ports:
+            - 3000:3000
+        volumes:
+            - ./volumes/grafana:/var/lib/grafana
+        #environment:
+        #    - "GF_SERVER_ROOT_URL=http://example.com"
+        #    - "GF_SECURITY_ADMIN_PASSWORD=secret"
