@@ -1,5 +1,4 @@
 From golang:1.9
-
 MAINTAINER mmm888
 
 RUN apt-get update; apt-get -y install vim; git clone https://github.com/mmm888/exchange-api-go ${GOPATH}/src/github.com/mmm888/exchange-api-go
