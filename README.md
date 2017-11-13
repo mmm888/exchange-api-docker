@@ -1,6 +1,6 @@
 # exchange-api-docker
 
-exchange-api-docker is the docker-compose file of (goanda)[https://github.com/mmm888/exchange-api-go/tree/master/cmd/goanda]
+exchange-api-docker is the docker-compose file of [goanda](https://github.com/mmm888/exchange-api-go/tree/master/cmd/goanda)
 
 ## Build
 
