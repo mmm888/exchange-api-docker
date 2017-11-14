@@ -36,3 +36,7 @@ END                  End date
 GRANULARITY          Granularity to take value (ex: 3H)
 ~~~
 
+## TODO
+
+* Replace env for "goanda influxdb" to arguments of "goanda" (using flag package)
+* Push docker image to Docker Hub
