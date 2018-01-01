@@ -38,5 +38,7 @@ GRANULARITY          Granularity to take value (ex: 3H)
 
 ## TODO
 
+* Fix the failure to "goanda influxdb init" when exec "docker-compose up -d" from the second time
+    * Require to remove "volumes" directory
 * Replace env for "goanda influxdb" to arguments of "goanda" (using flag package)
 * Push docker image to Docker Hub
